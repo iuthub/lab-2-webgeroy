@@ -24,3 +24,13 @@ ul.class-list li{display:inline-block; width:45%; text-align:center; margin:2%; 
 #em:hover{background-image: url("images/em.jpg"); background-size: 25% 100%; background-repeat: no-repeat;padding-left:10%;text-shadow:2px 2px 7px #b30059; font-size:1.6em;}
 #ip:hover{background-image: url("images/ip.jpg"); background-size: 25% 100%; background-repeat: no-repeat;padding-left:10%;text-shadow:2px 2px 7px #b30059; font-size:1.6em;}
 #ca:hover{background-image: url("images/ca.jpg"); background-size: 25% 100%; background-repeat: no-repeat;padding-left:10%;text-shadow:2px 2px 7px #b30059; font-size:1.6em;}
+
+ol.movie-list{width:80%; margin:auto;}
+ol.movie-list li{display:inline-block; max-width:30%; margin: 10px; position:relative;}
+ol.movie-list img{max-width:100%;}
+ol.movie-list .header{position:absolute; top:0; width:100%; background:black; color:white;opacity:1;
+    padding:5px; text-align:center; font-weight:bold;}
+ol.movie-list li:hover{opacity:0.8;}
+ol.movie-list .movie-ref{display:none; transition: display 0.2s;position:absolute; bottom:4px; padding:0.5em; text-align:center;letter-spacing: 7px;
+    text-decoration: none; color:black; background:rgba(255, 255, 255, 0.7); width:100%; font-family:'Londrina Solid', cursive; font-size:1.3em;}
+ol.movie-list .movie-ref:hover{background:#ff471a; color:white;}
