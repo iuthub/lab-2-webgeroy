@@ -1,0 +1,26 @@
+*{box-sizing: border-box;}
+body{margin:0; padding:0; margin-top:-30px; background:#ccffcc;}
+.container{padding:0 5% 0 5%; background:#ccffcc;}
+@keyframes top-anim{
+  from {right:100%; color:blue;}
+  to {right:0%; color:white;}
+}
+header{}
+.full-name{position:relative; width:100%; letter-spacing: 15px; padding:10px;
+    animation-name: top-anim; animation-duration: 3s;
+    background-color: #7a7a52;text-transform: uppercase; font-size: 3em; font-family: 'Shrikhand', cursive;
+    text-align: center; color:white; text-shadow:5px 5px 5px black, 0px 1px 10px black;
+    }
+p.top{font-family: 'Chewy', cursive; font-size: 1.5em; letter-spacing: 2px;}
+p.top strong{text-decoration: underline;}
+.section{text-align:center; background-color:#00b300; width:80%; margin:auto; padding:5px; color:white; border-radius: 50px;
+    text-transform: uppercase; font-family:'Bungee Inline', cursive; letter-spacing: 5px; text-shadow: 3px 3px 10px #cc0066;}
+ul.class-list{list-style: none; margin:auto; width:80%; padding:2em;}
+ul.class-list li{display:inline-block; width:45%; text-align:center; margin:2%; font-weight:bold;
+    background-color: #4da6ff; border-radius: 20px; padding:30px 10px 30px 10px; color:white; font-size:1.5em;}
+#cal:hover{background-image: url("images/cal.png"); background-size: 25% 100%; background-repeat: no-repeat; padding-left:10%; text-shadow:2px 2px 7px #b30059; font-size:1.6em;}
+#sp:hover{background-image: url("images/sp.jpg"); background-size: 25% 100%; background-repeat: no-repeat;padding-left:10%;text-shadow:2px 2px 7px #b30059; font-size:1.6em;}
+#his:hover{background-image: url("images/history.jpg"); background-size: 25% 100%; background-repeat: no-repeat;padding-left:10%;text-shadow:2px 2px 7px #b30059; font-size:1.6em;}
+#em:hover{background-image: url("images/em.jpg"); background-size: 25% 100%; background-repeat: no-repeat;padding-left:10%;text-shadow:2px 2px 7px #b30059; font-size:1.6em;}
+#ip:hover{background-image: url("images/ip.jpg"); background-size: 25% 100%; background-repeat: no-repeat;padding-left:10%;text-shadow:2px 2px 7px #b30059; font-size:1.6em;}
+#ca:hover{background-image: url("images/ca.jpg"); background-size: 25% 100%; background-repeat: no-repeat;padding-left:10%;text-shadow:2px 2px 7px #b30059; font-size:1.6em;}
