@@ -1,19 +1,20 @@
 *{box-sizing: border-box;}
-body{margin:0; padding:0; margin-top:-30px; background:#ccffcc;}
-.container{padding:0 5% 0 5%; background:#ccffcc;}
+body{margin:0; padding:0; margin-top:-30px; background: url('images/bg1.jfif'); background-size:contain;}
+.container{margin:0 5% 0 5%;}
 @keyframes top-anim{
   from {right:100%; color:blue;}
   to {right:0%; color:white;}
 }
-header{}
+header{background: url('images/bg2.webp');
+    background-size:100% 100%; }
 .full-name{position:relative; width:100%; letter-spacing: 15px; padding:10px;
     animation-name: top-anim; animation-duration: 3s;
-    background-color: #7a7a52;text-transform: uppercase; font-size: 3em; font-family: 'Shrikhand', cursive;
+    background-color: none;text-transform: uppercase; font-size: 3em; font-family: 'Shrikhand', cursive;
     text-align: center; color:white; text-shadow:5px 5px 5px black, 0px 1px 10px black;
     }
-p.top{font-family: 'Chewy', cursive; font-size: 1.5em; letter-spacing: 2px;}
+p.top{font-family: 'Chewy', cursive; font-size: 1.5em; letter-spacing: 2px; text-align:center; color:white;}
 p.top strong{text-decoration: underline;}
-.section{text-align:center; background-color:#00b300; width:80%; margin:auto; padding:5px; color:white; border-radius: 50px;
+.section-header{text-align:center; background-color:#00b300; width:80%; margin:auto; padding:5px; color:white; border-radius: 50px;
     text-transform: uppercase; font-family:'Bungee Inline', cursive; letter-spacing: 5px; text-shadow: 3px 3px 10px #cc0066;}
 ul.class-list{list-style: none; margin:auto; width:80%; padding:2em;}
 ul.class-list li{display:inline-block; width:45%; text-align:center; margin:2%; font-weight:bold;
@@ -31,6 +32,21 @@ ol.movie-list img{max-width:100%;}
 ol.movie-list .header{position:absolute; top:0; width:100%; background:black; color:white;opacity:1;
     padding:5px; text-align:center; font-weight:bold;}
 ol.movie-list li:hover{opacity:0.8;}
-ol.movie-list .movie-ref{display:none; transition: display 0.2s;position:absolute; bottom:4px; padding:0.5em; text-align:center;letter-spacing: 7px;
+ol.movie-list .movie-ref{display:none;position:absolute; bottom:4px; padding:0.5em; text-align:center;letter-spacing: 7px;
     text-decoration: none; color:black; background:rgba(255, 255, 255, 0.7); width:100%; font-family:'Londrina Solid', cursive; font-size:1.3em;}
-ol.movie-list .movie-ref:hover{background:#ff471a; color:white;}
+ol.movie-list .movie-ref:hover{background:#ff0000; color:white;}
+
+div.moods{width:90%; margin: auto; margin-top:40px; margin-bottom:40px;}
+div.moods div{width:48%; height:90%; text-align: center;display:inline-block; background:url("images/bg-mood.png"); background-size:100% 100%;}
+div.moods div img{min-width:45%; max-width:50%; margin-left:5%;}
+.moods .mood-happy, .moods .mood-sad{position:relative;}
+.tooltip-mood{background:#ff3333; padding:1em 2em; color:white; border-radius:10px; position:absolute; top:50%; transform: translateY(-50%); visibility: hidden; font-weight:bold; font-size:1.3em;}
+.tooltip-happy::before, .tooltip-sad::before{content:" ";border-width: 10px; border-style: solid; border-color: transparent #ff3333 transparent transparent; position:absolute; right:100%; z-index:1;}
+.mood-happy:hover .tooltip-happy, .mood-sad:hover .tooltip-sad{visibility: visible;}
+.neighbour-list{list-style-type: none;text-align: center;}
+.neighbour-list li{display:inline-block; width:24%; font-family: 'Fredoka One', cursive; text-transform: uppercase; font-size:1.5em; color:white;}
+.neighbour-list li img{width:70%;}
+
+.section-movies{background:url('images/bg_movies.jpg'); background-size:100% 100%;
+    background-size:contain;padding:8% 0 13% 0; margin-bottom:20px; background-repeat: no-repeat;}
+.moods{background: url("images/bg_mood.jpg");}
