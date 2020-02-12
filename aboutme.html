@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>My Home Page</title>
     <link rel="stylesheet" href="aboutme.css">
     <link href="https://fonts.googleapis.com/css?family=Shrikhand&display=swap" rel="stylesheet">
@@ -9,7 +10,27 @@
     <link href="https://fonts.googleapis.com/css?family=Bungee+Inline&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Londrina+Solid&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Fredoka+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Eater&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/scrollreveal">
+      ScrollReveal({reset:true});
+      ScrollReveal().reveal('footer');
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script type="text/javascript" src="jquery-3.4.1.js"></script>
+    <style media="screen">
+      @media only screen and (max-width:800px) {
+          ul.class-list li{width:100%;}
+          ol.movie-list li{width:46%; margin:1%;}
+          ol.movie-list li.last{position:relative; left:50%; transform:translateX(-50%);}
+          .tooltip-mood{background:#ff3333; padding:0.5em 0.7em; color:white; border-radius:10px; position:absolute; top:50%; transform: translateY(-50%); visibility: hidden; font-weight:bold; font-size:0.7em;}
+          .tooltip-happy::before, .tooltip-sad::before{content:" ";border-width: 7px; border-style: solid; border-color: transparent #ff3333 transparent transparent; position:absolute; right:100%; z-index:2;}
+          .neighbour-list li{width:49%;}
+          footer{display:none;}
+      }
+      @media only screen and (max-width:500px) {
+        ol.movie-list li{width:100%; margin:0;}
+      }
+    </style>
   </head>
   <body>
     <header>
@@ -72,7 +93,7 @@
             <img src="https://cdn.pocket-lint.com/r/s/660x/assets/images/147514-tv-feature-mcu-timeline-image14-cwmyq5cduf-png.webp?v1" class="img-fluid pull-xs-left" alt="...">
             <a class="movie-ref" href="https://www.imdb.com/title/tt2395427/" target="_blank">WATCH NOW</a>
           </li>
-          <li>
+          <li class="last">
             <span class="header">Thor: Ragnarok (2017)</span>
             <img src="https://cdn.pocket-lint.com/r/s/660x/assets/images/147514-tv-feature-mcu-timeline-image20-qsljwdvrfe-png.webp?v1" class="img-fluid pull-xs-left" alt="...">
             <a class="movie-ref" href="https://www.imdb.com/title/tt3501632/" target="_blank">WATCH NOW</a>
@@ -114,7 +135,19 @@
         </ul>
       </div>
     </div>
-    <footer></footer>
+    <footer>
+      <span class="des">Designed by <em id="nickname">Black@Tiger</em>!</span>
+      <ul>
+        <li>
+          <a href="https://www.instagram.com/invites/contact/?i=8rbd5fee74e0&utm_content=48ndpp6" class="fa fa-instagram fa-2x"></a>
+          <span>@tukhtamurod_isroilov</span>
+        </li>
+        <li>
+          <a href="#nickname" class="fa fa-telegram fa-2x"></a>
+          <span>@Black_Tiger07</span>
+        </li>
+      </ul>
+    </footer>
   </body>
   <script type="text/javascript" src="aboutme.js"></script>
 </html>

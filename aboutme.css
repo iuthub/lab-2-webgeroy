@@ -5,6 +5,10 @@ body{margin:0; padding:0; margin-top:-30px; background: url('images/bg1.jfif'); 
   from {right:100%; color:blue;}
   to {right:0%; color:white;}
 }
+@keyframes footer-anim{
+  from{left:100%;}
+  to{left:0%;}
+}
 header{background: url('images/bg2.webp');
     background-size:100% 100%; }
 .full-name{position:relative; width:100%; letter-spacing: 15px; padding:10px;
@@ -27,7 +31,7 @@ ul.class-list li{display:inline-block; width:45%; text-align:center; margin:2%; 
 #ca:hover{background-image: url("images/ca.jpg"); background-size: 25% 100%; background-repeat: no-repeat;padding-left:10%;text-shadow:2px 2px 7px #b30059; font-size:1.6em;}
 
 ol.movie-list{width:80%; margin:auto;}
-ol.movie-list li{display:inline-block; max-width:30%; margin: 10px; position:relative;}
+ol.movie-list li{display:inline-block; width:30%; margin: 1%; position:relative;}
 ol.movie-list img{max-width:100%;}
 ol.movie-list .header{position:absolute; top:0; width:100%; background:black; color:white;opacity:1;
     padding:5px; text-align:center; font-weight:bold;}
@@ -41,7 +45,7 @@ div.moods div{width:48%; height:90%; text-align: center;display:inline-block; ba
 div.moods div img{min-width:45%; max-width:50%; margin-left:5%;}
 .moods .mood-happy, .moods .mood-sad{position:relative;}
 .tooltip-mood{background:#ff3333; padding:1em 2em; color:white; border-radius:10px; position:absolute; top:50%; transform: translateY(-50%); visibility: hidden; font-weight:bold; font-size:1.3em;}
-.tooltip-happy::before, .tooltip-sad::before{content:" ";border-width: 10px; border-style: solid; border-color: transparent #ff3333 transparent transparent; position:absolute; right:100%; z-index:1;}
+.tooltip-happy::before, .tooltip-sad::before{content:" ";border-width: 10px; border-style: solid; border-color: transparent #ff3333 transparent transparent; position:absolute; right:100%; z-index:2;}
 .mood-happy:hover .tooltip-happy, .mood-sad:hover .tooltip-sad{visibility: visible;}
 .neighbour-list{list-style-type: none;text-align: center;}
 .neighbour-list li{display:inline-block; width:24%; font-family: 'Fredoka One', cursive; text-transform: uppercase; font-size:1.5em; color:white;}
@@ -50,3 +54,15 @@ div.moods div img{min-width:45%; max-width:50%; margin-left:5%;}
 .section-movies{background:url('images/bg_movies.jpg'); background-size:100% 100%;
     background-size:contain;padding:8% 0 13% 0; margin-bottom:20px; background-repeat: no-repeat;}
 .moods{background: url("images/bg_mood.jpg");}
+footer{width:100%; height:90px; background:black; color:white; padding:0px; position: relative; padding-left:10%;}
+.in-view{animation-name: footer-anim; animation-duration: 4s; animation-timing-function: linear;}
+footer span.des{position:absolute; top:50%; transform:translateY(-50%); font-size:50px; letter-spacing: 5px; max-width:74%;}
+footer ul{position:absolute; left: 75%; list-style-type:none;}
+footer ul span{display:none;padding:2px 5px; border-radius:8px; background:white; color:black !important; font-family: 'Arial'; font-weight:bold; position: relative;
+    bottom:6px; margin-left:10px; width:0px;}
+footer ul a:hover + span{display: inline-block; width:auto;}
+.fa{font-size: 1em; width: 20px; text-align: center; text-decoration: none; margin: 5px 2px;}
+.fa-instagram {color: white;}
+.fa-telegram {color: white;}
+.fa:hover{color:red;}
+#nickname{font-family: 'Eater', cursive; letter-spacing:10px; text-shadow:5px 0 5px red;}
